@@ -185,3 +185,34 @@ Body{
 	background-color: #333333;
 	margin: auto;
 }
+.rightside{
+	width:275px;
+	min-height:200px;
+	float:left;
+	background-color:#999;
+	margin-left:12px;
+}
+.leftside{
+	width:753px;
+	min-height:200px;
+	float:left;
+	background-color:#999;
+}
+.widget{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	margin-bottom:10px;
+}
+.widgettitulo{
+	height:30px;
+	border-bottom:1px solid #CCC;
+	background-color: #DDD;
+	line-height:30px;
+	padding-left:5px;
+	font-size:14px;
+}
+.widgetconteudo{
+	text-align:center;
+	padding-top:5px;
+	padding-bottom5px;
+}
