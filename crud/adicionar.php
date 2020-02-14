@@ -1,7 +1,7 @@
 <?php
 include 'class/produto.php';
 $produtos = new Produtos();
-if(isset($_POST['nome']) && !empty($_POST['nome']) ){
+if(isset($_POST['nome']) && !empty($_POST['nome'])){
     $nome = $_POST['nome'];
     $marca = $_POST['marca'];
     $estoque = $_POST['estoque'];

@@ -55,19 +55,15 @@ class Produtos
 
     public function excluir($id)
     {
-        if ($this->existeProduto($id) == true) {
-            $sql = "DELETE FROM usuario where id = :id";
+            $sql = "DELETE FROM produtos where id = :id";
             $sql = $this->pdo->prepare($sql);
             $sql->bindValue(':id', $id);
             $sql->execute();
             return true;
-        } else {
-            return false;
-        }
     }
 
 
-    private function existeProduto($nome){
+    public function existeProduto($nome){
         $sql = "select * from produtos where nome = :nome";
         $sql = $this->pdo->prepare($sql);
         $sql->bindValue(':nome', $nome);
